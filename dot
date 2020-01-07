@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<h3 &le; 0.5<br/>entropy = 2.178<br/>samples = 3021<br/>value = [932, 650, 43, 48, 753, 4, 9, 582]<br/>class =  gas>, fillcolor="#fdf5ef"] ;
+1 [label=<h1 &le; 2.5<br/>entropy = 2.097<br/>samples = 2083<br/>value = [692, 302, 37, 32, 667, 2, 0, 351]<br/>class =  gas>, fillcolor="#fffdfc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<h21_1 &le; 0.5<br/>entropy = 1.934<br/>samples = 958<br/>value = [381, 148, 14, 14, 329, 0, 0, 72]<br/>class =  gas>, fillcolor="#fdf5ef"] ;
+1 -> 2 ;
+3 [label=<entropy = 1.936<br/>samples = 824<br/>value = [314, 115, 13, 13, 304, 0, 0, 65]<br/>class =  gas>, fillcolor="#fefdfb"] ;
+2 -> 3 ;
+4 [label=<entropy = 1.778<br/>samples = 134<br/>value = [67, 33, 1, 1, 25, 0, 0, 7]<br/>class =  gas>, fillcolor="#f6d5bc"] ;
+2 -> 4 ;
+5 [label=<h21_1 &le; 0.5<br/>entropy = 2.152<br/>samples = 1125<br/>value = [311, 154, 23, 18, 338, 2, 0, 279]<br/>class =  Electricity>, fillcolor="#f8fcfe"] ;
+1 -> 5 ;
+6 [label=<entropy = 2.107<br/>samples = 975<br/>value = [261, 114, 21, 12, 320, 1, 0, 246]<br/>class =  Electricity>, fillcolor="#eff7fd"] ;
+5 -> 6 ;
+7 [label=<entropy = 2.201<br/>samples = 150<br/>value = [50, 40, 2, 6, 18, 1, 0, 33]<br/>class =  gas>, fillcolor="#fdf4ed"] ;
+5 -> 7 ;
+8 [label=<h3 &le; 1.5<br/>entropy = 2.078<br/>samples = 938<br/>value = [240, 348, 6, 16, 86, 2, 9, 231]<br/>class = No exist>, fillcolor="#f6fbe0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<h1 &le; 2.5<br/>entropy = 1.919<br/>samples = 472<br/>value = [119, 221, 1, 12, 20, 1, 6, 92]<br/>class = No exist>, fillcolor="#eff7c6"] ;
+8 -> 9 ;
+10 [label=<entropy = 1.663<br/>samples = 191<br/>value = [54, 108, 0, 7, 5, 0, 3, 14]<br/>class = No exist>, fillcolor="#e9f5b1"] ;
+9 -> 10 ;
+11 [label=<entropy = 1.987<br/>samples = 281<br/>value = [65, 113, 1, 5, 15, 1, 3, 78]<br/>class = No exist>, fillcolor="#f6fbdd"] ;
+9 -> 11 ;
+12 [label=<h21_1 &le; 0.5<br/>entropy = 2.131<br/>samples = 466<br/>value = [121, 127, 5, 4, 66, 1, 3, 139]<br/>class = No exist>, fillcolor="#fef8fa"] ;
+8 -> 12 ;
+13 [label=<entropy = 2.157<br/>samples = 352<br/>value = [80, 92, 5, 4, 59, 1, 1, 110]<br/>class = No exist>, fillcolor="#fdf1f5"] ;
+12 -> 13 ;
+14 [label=<entropy = 1.906<br/>samples = 114<br/>value = [41, 35, 0, 0, 7, 0, 2, 29]<br/>class =  gas>, fillcolor="#fdf5f0"] ;
+12 -> 14 ;
+}
